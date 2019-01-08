@@ -30,6 +30,9 @@ public class Cliente implements Serializable {
     @CollectionTable(name= "TELEFONE")
     private Set<String> telefones = new HashSet<>();
 
+    @OneToMany(mappedBy = "cliente")
+    private List<Pedido> pedidos = new ArrayList<>();
+
     public Cliente() {
     }
 
@@ -40,6 +43,7 @@ public class Cliente implements Serializable {
         this.cpfOuCnpj = cpfOuCnpj;
         this.tipoCliente = tipoCliente.getCod();
     }
+
 
     public Integer getId() {
         return id;
@@ -65,11 +69,11 @@ public class Cliente implements Serializable {
         this.email = email;
     }
 
-    public String getCpfouCnpj() {
+    public String getCpfOuCnpj() {
         return cpfOuCnpj;
     }
 
-    public void setCpfouCnpj(String cpfOuCnpj) {
+    public void setCpfOuCnpj(String cpfOuCnpj) {
         this.cpfOuCnpj = cpfOuCnpj;
     }
 
@@ -95,6 +99,14 @@ public class Cliente implements Serializable {
 
     public void setTelefones(Set<String> telefones) {
         this.telefones = telefones;
+    }
+
+    public List<Pedido> getPedidos() {
+        return pedidos;
+    }
+
+    public void setPedidos(List<Pedido> pedidos) {
+        this.pedidos = pedidos;
     }
 
     @Override
