@@ -80,7 +80,7 @@ public class App implements CommandLineRunner {
 
         Cliente cli1 = new Cliente(null, "Maria Silva","maria@gmail.com","11111111", TipoCliente.PESSOAFISICA);
 
-        cli1.getTelefones().addAll(Arrays.asList("24545464","ekpaokeoak"));
+        cli1.getTelefones().addAll(Arrays.asList("24545464","455654545"));
 
         Endereco en1=new Endereco(null,"Rua Flores","300","apto 303","Jardim","323656565",cli1,c1);
         Endereco en2=new Endereco(null,"Avenida Matos","105","Sala 800","Centro","4545454",cli1,c2);
