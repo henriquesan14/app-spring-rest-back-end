@@ -21,7 +21,7 @@ public class ClienteService {
                 "Objeto não encontrado! Id: "+id+", Tipo: "+Cliente.class.getName()));
     }
 
-    public List<Cliente> buscar(){
+    public List<Cliente> findAll(){
         return clientes.findAll();
     }
 }

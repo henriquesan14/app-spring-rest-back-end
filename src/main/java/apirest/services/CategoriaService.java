@@ -21,12 +21,16 @@ public class CategoriaService {
                 "Objeto não encontrado! Id: "+id+", Tipo: "+Categoria.class.getName()));
     }
 
-    public List<Categoria> buscar(){
+    public List<Categoria> findAll(){
         return categorias.findAll();
     }
 
     public Categoria insert(Categoria obj){
         obj.setId(null);
+        return categorias.save(obj);
+    }
+
+    public Categoria update(Categoria obj){
         return categorias.save(obj);
     }
 

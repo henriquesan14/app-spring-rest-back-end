@@ -17,11 +17,11 @@ public class ClienteResource {
 
     @GetMapping
     public List<Cliente> listar(){
-        return clienteService.buscar();
+        return clienteService.findAll();
     }
 
     @RequestMapping(value="/{id}", method= RequestMethod.GET)
-    public ResponseEntity<?> find(@PathVariable Integer id) {
+    public ResponseEntity<Cliente> find(@PathVariable Integer id) {
         Cliente obj = clienteService.find(id);
         return ResponseEntity.ok().body(obj);
     }
