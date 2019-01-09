@@ -1,5 +1,6 @@
 package apirest.services;
 
+import apirest.DTO.CategoriaDTO;
 import apirest.domain.Categoria;
 import apirest.repositories.CategoriaRepository;
 import apirest.services.exceptions.DataIntegrityException;
@@ -53,5 +54,9 @@ public class CategoriaService {
     public Page<Categoria> findPage(Integer page,Integer linesPorPage, String orderBy, String direction){
         PageRequest pageRequest = PageRequest.of(page, linesPorPage, Sort.Direction.valueOf(direction), orderBy);
         return categorias.findAll(pageRequest);
+    }
+
+    public Categoria fromDto(CategoriaDTO objDto){
+        return new Categoria(objDto.getId(),objDto.getNome());
     }
 }
