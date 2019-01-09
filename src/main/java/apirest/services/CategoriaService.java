@@ -24,4 +24,10 @@ public class CategoriaService {
     public List<Categoria> buscar(){
         return categorias.findAll();
     }
+
+    public Categoria insert(Categoria obj){
+        obj.setId(null);
+        return categorias.save(obj);
+    }
+
 }
