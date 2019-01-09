@@ -58,11 +58,18 @@ public class App implements CommandLineRunner {
         Categoria cat2 = new Categoria(null, "Escritorio");
         cat2.getProdutos().addAll(Arrays.asList(p2));
 
+        Categoria cat3 = new Categoria(null, "Escritorio");
+        Categoria cat4 = new Categoria(null, "Escritorio");
+        Categoria cat5 = new Categoria(null, "Escritorio");
+        Categoria cat6 = new Categoria(null, "Escritorio");
+        Categoria cat7 = new Categoria(null, "Escritorio");
+        Categoria cat8 = new Categoria(null, "Escritorio");
+
         p1.getCategorias().addAll(Arrays.asList(cat1));
         p2.getCategorias().addAll(Arrays.asList(cat1,cat2));
         p3.getCategorias().addAll(Arrays.asList(cat1));
 
-        categoriaRepository.saveAll(Arrays.asList(cat1,cat2));
+        categoriaRepository.saveAll(Arrays.asList(cat1,cat2,cat3,cat4,cat5,cat6,cat7,cat8));
         produtoRepository.saveAll(Arrays.asList(p1,p2,p3));
 
         Estado e1=new Estado(null,"Minas Gerais");

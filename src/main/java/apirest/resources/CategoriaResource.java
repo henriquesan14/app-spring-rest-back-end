@@ -4,6 +4,7 @@ import apirest.DTO.CategoriaDTO;
 import apirest.domain.Categoria;
 import apirest.services.CategoriaService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -54,6 +55,17 @@ public class CategoriaResource {
     public ResponseEntity<Void> delete(@PathVariable Integer id) {
         categoriaService.delete(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @RequestMapping(value="/page", method= RequestMethod.GET)
+    public ResponseEntity<Page<CategoriaDTO>> findPage(
+            @RequestParam(value = "page", defaultValue = "0") Integer page,
+            @RequestParam(value = "linesPorPage", defaultValue = "24") Integer linesPorPage,
+            @RequestParam(value = "orderBy", defaultValue = "nome") String orderBy,
+            @RequestParam(value = "direction", defaultValue = "ASC") String direction) {
+        Page<Categoria> list = categoriaService.findPage(page, linesPorPage, orderBy, direction);
+        Page<CategoriaDTO> listDto = list.map(obj -> new CategoriaDTO(obj));
+        return ResponseEntity.ok().body(listDto);
     }
 
 
