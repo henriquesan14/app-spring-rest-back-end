@@ -1,5 +1,6 @@
 package apirest.services;
 
+import apirest.domain.Cliente;
 import apirest.domain.ItemPedido;
 import apirest.domain.PagamentoComBoleto;
 import apirest.domain.Pedido;
@@ -7,8 +8,13 @@ import apirest.domain.enums.EstadoPagamento;
 import apirest.repositories.ItemPedidoRepository;
 import apirest.repositories.PagamentoRepository;
 import apirest.repositories.PedidoRepository;
+import apirest.security.UserSS;
+import apirest.services.exceptions.AuthorizationException;
 import apirest.services.exceptions.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -72,5 +78,15 @@ public class PedidoService {
         itemPedidoRepository.saveAll(obj.getItens());
         emailService.sendOrderConfirmationHtmlEmail(obj);
         return obj;
+    }
+
+    public Page<Pedido> findPage(Integer page, Integer linesPorPage, String orderBy, String direction){
+        UserSS user = UserService.authenticated();
+        if(user == null){
+            throw new AuthorizationException("Acesso negado");
+        }
+        PageRequest pageRequest = PageRequest.of(page, linesPorPage, Sort.Direction.valueOf(direction), orderBy);
+        Cliente cliente = clienteService.find(user.getId());
+        return pedidos.findByCliente(cliente,pageRequest);
     }
 }
