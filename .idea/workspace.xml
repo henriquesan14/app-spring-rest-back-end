@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0ee7528-42fe-4f34-8a6c-df6e956a9ff3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/apirest/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apirest/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/apirest/security/JWTUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apirest/security/JWTUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,19 +18,20 @@
     <session id="508002681">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.68" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="16814" />
+          <entry key="JAVA" value="16945" />
           <entry key="PLAIN_TEXT" value="23" />
           <entry key="Properties" value="371" />
           <entry key="XML" value="32" />
@@ -38,7 +40,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="308" />
+          <entry key="JAVA" value="311" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="Properties" value="57" />
           <entry key="XML" value="10" />
@@ -47,68 +49,38 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/apirest/security/JWTUtil.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/apirest/security/JWTAuthorizationFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="318">
+              <caret line="37" column="13" lean-forward="true" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/apirest/config/SecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="60" column="102" selection-start-line="60" selection-start-column="102" selection-end-line="60" selection-end-column="102" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2902#2903#0" expanded="true" />
+                <element signature="e#2952#2953#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/apirest/config/SecurityConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/apirest/security/JWTUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2259#2260#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/apirest/services/DbService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-240">
-              <caret line="110" column="80" selection-start-line="110" selection-start-column="57" selection-end-line="110" selection-end-column="80" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/apirest/DTO/CredenciaisDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
-              <folding>
-                <element signature="e#145#146#0" expanded="true" />
-                <element signature="e#173#174#0" expanded="true" />
-                <element signature="e#215#216#0" expanded="true" />
-                <element signature="e#249#250#0" expanded="true" />
-                <element signature="e#281#282#0" expanded="true" />
-                <element signature="e#309#310#0" expanded="true" />
-                <element signature="e#351#352#0" expanded="true" />
-                <element signature="e#385#386#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/apirest/security/UserSS.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="26" column="117" lean-forward="true" selection-start-line="26" selection-start-column="117" selection-end-line="26" selection-end-column="117" />
+            <state relative-caret-position="29">
+              <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,7 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/apirest/services/CategoriaService.java" />
         <option value="$PROJECT_DIR$/src/main/java/apirest/resources/ClienteResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/apirest/services/validation/ClienteInsert.java" />
         <option value="$PROJECT_DIR$/src/main/java/apirest/services/validation/utils/BR.java" />
@@ -196,8 +167,9 @@
         <option value="$PROJECT_DIR$/src/main/java/apirest/DTO/CredenciaisDTO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/apirest/services/UserDetailsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/apirest/security/JWTUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/apirest/security/JWTAuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/apirest/security/JWTAuthorizationFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/apirest/security/JWTUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/apirest/config/SecurityConfig.java" />
       </list>
     </option>
@@ -224,7 +196,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -331,10 +302,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547179724605" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547225869921" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -403,7 +375,7 @@
     <frame x="-8" y="-8" width="1168" height="840" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2725632" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27707583" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -435,24 +407,11 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/apirest/services/validation/ClienteInsertValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="42" column="65" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/apirest/services/validation/utils/ClienteUpdate.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/apirest/resources/ClienteResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="34" column="41" lean-forward="true" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -467,9 +426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="38" column="54" lean-forward="true" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -477,11 +433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
           <caret line="55" column="113" lean-forward="true" selection-start-line="54" selection-start-column="36" selection-end-line="55" selection-end-column="113" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2094#2095#0" expanded="true" />
-            <element signature="e#2139#2140#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -496,9 +447,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="514">
           <caret line="34" column="76" selection-start-line="34" selection-start-column="76" selection-end-line="34" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -506,9 +454,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -516,21 +461,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -538,9 +468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -548,9 +475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -558,9 +482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -568,11 +489,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#509#824#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -580,9 +496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -590,9 +503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83">
           <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -600,9 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="505">
           <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -638,9 +545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="131" column="67" lean-forward="true" selection-start-line="131" selection-start-column="67" selection-end-line="131" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -648,9 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -658,9 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -668,9 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
           <caret line="72" column="52" selection-start-line="72" selection-start-column="52" selection-end-line="72" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -699,9 +594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -709,9 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="83" column="36" lean-forward="true" selection-start-line="83" selection-start-column="36" selection-end-line="83" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -719,13 +608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1939#1940#0" expanded="true" />
-            <element signature="e#1967#1968#0" expanded="true" />
-            <element signature="e#2009#2010#0" expanded="true" />
-            <element signature="e#2043#2044#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -733,10 +615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-          <folding>
-            <element signature="e#922#923#0" expanded="true" />
-            <element signature="e#967#968#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -758,11 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -770,9 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="58" column="3" lean-forward="true" selection-start-line="58" selection-start-column="3" selection-end-line="67" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -780,9 +650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -797,15 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="58" column="34" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1235#1236#0" expanded="true" />
-            <element signature="e#1262#1263#0" expanded="true" />
-            <element signature="e#2478#2479#0" expanded="true" />
-            <element signature="e#2505#2506#0" expanded="true" />
-            <element signature="e#2650#2651#0" expanded="true" />
-            <element signature="e#2677#2678#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -820,9 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -844,9 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -854,36 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/apirest/DTO/CredenciaisDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
-          <folding>
-            <element signature="e#145#146#0" expanded="true" />
-            <element signature="e#173#174#0" expanded="true" />
-            <element signature="e#215#216#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/apirest/services/DbService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
-          <caret line="110" column="80" selection-start-line="110" selection-start-column="57" selection-end-line="110" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -897,20 +719,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/apirest/security/JWTUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/apirest/services/DbService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="-226">
+          <caret line="110" column="80" selection-start-line="110" selection-start-column="57" selection-end-line="110" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/apirest/DTO/CredenciaisDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/apirest/security/UserSS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="26" column="117" lean-forward="true" selection-start-line="26" selection-start-column="117" selection-end-line="26" selection-end-column="117" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/apirest/security/UserSS.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/apirest/security/JWTAuthorizationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="26" column="117" lean-forward="true" selection-start-line="26" selection-start-column="117" selection-end-line="26" selection-end-column="117" />
+        <state relative-caret-position="318">
+          <caret line="37" column="13" lean-forward="true" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -919,11 +755,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/apirest/config/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+        <state relative-caret-position="341">
+          <caret line="60" column="102" selection-start-line="60" selection-start-column="102" selection-end-line="60" selection-end-column="102" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2259#2260#0" expanded="true" />
+            <element signature="e#2902#2903#0" expanded="true" />
+            <element signature="e#2952#2953#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/apirest/security/JWTUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
