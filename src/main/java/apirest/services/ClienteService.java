@@ -5,9 +5,12 @@ import apirest.DTO.ClienteNewDTO;
 import apirest.domain.Cidade;
 import apirest.domain.Cliente;
 import apirest.domain.Endereco;
+import apirest.domain.enums.Perfil;
 import apirest.domain.enums.TipoCliente;
 import apirest.repositories.ClienteRepository;
 import apirest.repositories.EnderecoRepository;
+import apirest.security.UserSS;
+import apirest.services.exceptions.AuthorizationException;
 import apirest.services.exceptions.DataIntegrityException;
 import apirest.services.exceptions.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,6 +38,12 @@ public class ClienteService {
     private BCryptPasswordEncoder pe;
 
     public Cliente find(Integer id) {
+
+        UserSS user = UserService.authenticated();
+        if(user == null || !user.hasRole(Perfil.ADMIN) && !id.equals(user.getId()) ){
+            throw new AuthorizationException("Acesso negado");
+        }
+
         Optional<Cliente> obj = clientes.findById(id);
         return obj.orElseThrow(() -> new ObjectNotFoundException(
                 "Objeto não encontrado! Id: "+id+", Tipo: "+Cliente.class.getName()));

@@ -2,6 +2,7 @@ package apirest.resources.exceptions;
 
 import javax.servlet.http.HttpServletRequest;
 
+import apirest.services.exceptions.AuthorizationException;
 import apirest.services.exceptions.DataIntegrityException;
 import apirest.services.exceptions.ObjectNotFoundException;
 import org.springframework.http.HttpStatus;
@@ -36,5 +37,12 @@ public class ResourceExceptionHandler {
             err.addError(x.getField(),x.getDefaultMessage());
         }
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(err);
+    }
+
+    @ExceptionHandler(AuthorizationException.class)
+    public ResponseEntity<StandardError> authorization(AuthorizationException e, HttpServletRequest request) {
+
+        StandardError err = new StandardError(HttpStatus.FORBIDDEN.value(), e.getMessage(), System.currentTimeMillis());
+        return ResponseEntity.status(HttpStatus.FORBIDDEN).body(err);
     }
 }
