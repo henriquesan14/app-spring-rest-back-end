@@ -2,6 +2,7 @@ package apirest.services;
 
 import apirest.domain.*;
 import apirest.domain.enums.EstadoPagamento;
+import apirest.domain.enums.Perfil;
 import apirest.domain.enums.TipoCliente;
 import apirest.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -107,17 +108,22 @@ public class DbService {
         estadoRepository.saveAll(Arrays.asList(e1,e2));
         cidadeRepository.saveAll(Arrays.asList(c1,c2,c3));
 
-        Cliente cli1 = new Cliente(null, "Maria Santos","zehenriquesan@gmail.com","11111111", TipoCliente.PESSOAFISICA,pe.encode("123"));
-
+        Cliente cli1 = new Cliente(null, "Maria Santos","zehenriquesan@gmail.com","26092119021", TipoCliente.PESSOAFISICA,pe.encode("123"));
         cli1.getTelefones().addAll(Arrays.asList("24545464","455654545"));
+
+        Cliente cli2 = new Cliente(null, "Ana Costa","zehenriquesan2@gmail.com","26092119021", TipoCliente.PESSOAFISICA,pe.encode("123"));
+        cli2.addPerfil(Perfil.ADMIN);
+        cli1.getTelefones().addAll(Arrays.asList("261426452","78978978978"));
 
         Endereco en1=new Endereco(null,"Rua Flores","300","apto 303","Jardim","323656565",cli1,c1);
         Endereco en2=new Endereco(null,"Avenida Matos","105","Sala 800","Centro","4545454",cli1,c2);
+        Endereco en3=new Endereco(null,"Avenida Floriano","2106","Sala 800","Centro","87552555",cli2,c2);
 
         cli1.getEnderecos().addAll(Arrays.asList(en1,en2));
+        cli2.getEnderecos().addAll(Arrays.asList(en3));
 
-        clienteRepository.save(cli1);
-        enderecoRepository.saveAll(Arrays.asList(en1,en2));
+        clienteRepository.saveAll(Arrays.asList(cli1,cli2));
+        enderecoRepository.saveAll(Arrays.asList(en1,en2,en3));
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm");
         Pedido ped1 = new Pedido(null,sdf.parse("30/09/2017 10:32"),cli1,en1);
