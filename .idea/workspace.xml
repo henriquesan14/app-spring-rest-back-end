@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0ee7528-42fe-4f34-8a6c-df6e956a9ff3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/apirest/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apirest/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apirest/repositories/CidadeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apirest/repositories/CidadeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apirest/repositories/EstadoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apirest/repositories/EstadoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/apirest/resources/exceptions/ResourceExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apirest/resources/exceptions/ResourceExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/apirest/resources/exceptions/StandardError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apirest/resources/exceptions/StandardError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/apirest/resources/exceptions/ValidationError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apirest/resources/exceptions/ValidationError.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,7 +31,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="20457" />
+          <entry key="JAVA" value="20519" />
           <entry key="PLAIN_TEXT" value="23" />
           <entry key="Properties" value="442" />
           <entry key="XML" value="32" />
@@ -40,7 +40,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="376" />
+          <entry key="JAVA" value="379" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="Properties" value="63" />
           <entry key="XML" value="10" />
@@ -51,13 +51,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/apirest/resources/EstadoResource.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/apirest/resources/exceptions/ResourceExceptionHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="474">
+              <caret line="44" column="162" selection-start-line="44" selection-start-column="162" selection-end-line="44" selection-end-column="162" />
             </state>
           </provider>
         </entry>
@@ -94,8 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/apirest/config/JacksonConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/apirest/services/BoletoService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application-teste.properties" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/src/main/java/apirest/domain/ItemPedido.java" />
@@ -121,7 +116,6 @@
         <option value="$PROJECT_DIR$/src/main/java/apirest/services/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/apirest/services/exceptions/AuthorizationException.java" />
         <option value="$PROJECT_DIR$/src/main/java/apirest/security/UserSS.java" />
-        <option value="$PROJECT_DIR$/src/main/java/apirest/resources/exceptions/ResourceExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/apirest/repositories/PedidoRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/apirest/services/PedidoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/apirest/resources/PedidoResource.java" />
@@ -145,6 +139,9 @@
         <option value="$PROJECT_DIR$/src/main/java/apirest/services/CidadeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/apirest/resources/CidadeResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/apirest/resources/EstadoResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/apirest/resources/exceptions/StandardError.java" />
+        <option value="$PROJECT_DIR$/src/main/java/apirest/resources/exceptions/ValidationError.java" />
+        <option value="$PROJECT_DIR$/src/main/java/apirest/resources/exceptions/ResourceExceptionHandler.java" />
       </list>
     </option>
   </component>
@@ -309,7 +306,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547256032611" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547257459081" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -410,20 +407,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-prod.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="12" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/apirest/DTO/ClienteNewDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -576,13 +559,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/apirest/resources/exceptions/ResourceExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -893,6 +869,48 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/apirest/resources/exceptions/StandardError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <folding>
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#869#870#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
+            <element signature="e#929#930#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
+            <element signature="e#1039#1040#0" expanded="true" />
+            <element signature="e#1069#1070#0" expanded="true" />
+            <element signature="e#1115#1116#0" expanded="true" />
+            <element signature="e#1153#1154#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+            <element signature="e#1211#1212#0" expanded="true" />
+            <element signature="e#1251#1252#0" expanded="true" />
+            <element signature="e#1283#1284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/apirest/resources/exceptions/ValidationError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/apirest/resources/exceptions/ResourceExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="44" column="162" selection-start-line="44" selection-start-column="162" selection-end-line="44" selection-end-column="162" />
         </state>
       </provider>
     </entry>
